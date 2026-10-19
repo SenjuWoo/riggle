@@ -53,6 +53,12 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
+def write_checksums(path: Path, lines: list[str]) -> None:
+    """Write LF checksums so `sha256sum -c` works on every platform."""
+    with path.open("w", encoding="utf-8", newline="\n") as fh:
+        fh.write("\n".join(lines) + "\n")
+
+
 def stage_app(stage: Path) -> None:
     for name in APP_FILES:
         source = ROOT / name
@@ -155,7 +161,7 @@ def main() -> int:
         if not source.is_file():
             raise SystemExit(f"source zip not found: {source}")
         lines.append(f"{sha256(source)}  {source.name}")
-    (out / "SHA256SUMS.txt").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    write_checksums(out / "SHA256SUMS.txt", lines)
 
     print(f"[5/5] done: {target} ({target.stat().st_size / 1024 / 1024:.1f} MiB)")
     print((out / "SHA256SUMS.txt").read_text(encoding="utf-8"), end="")

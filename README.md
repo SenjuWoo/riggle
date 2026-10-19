@@ -16,7 +16,7 @@ Blender is the geometry engine. The browser is the UI. Everything runs on your m
 - **Python 3.10+** (stdlib only — no pip install needed)
 - **Blender 4.5+** (tested with Blender 5.2 from Steam). Riggle finds common install
   paths automatically; otherwise point it at `blender.exe` in **Settings**.
-- Any modern browser. Chromium/Edge/Firefox all work.
+- A modern browser. Chromium/Edge are tested; Firefox should work, Safari is untested.
 
 ## Run
 

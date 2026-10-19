@@ -5,5 +5,5 @@ geometry engine, and this module only glues them together.
 """
 
 APP_NAME = "Riggle"
-VERSION = "0.1.0"
+VERSION = "0.1.1"
 MANIFEST_VERSION = 1

@@ -2,7 +2,7 @@
 
 **Rig it, jiggle it, ship it.**
 
-> **Heavy WIP — 0.1.0.** The five-step flow works end to end, but the UI, project
+> **Heavy WIP — 0.1.1.** The five-step flow works end to end, but the UI, project
 > format and export manifest can still change without notice. Back up projects and
 > don't put it in a production pipeline yet.
 
@@ -27,6 +27,14 @@ Blender is the geometry engine. The browser is the UI. Everything runs on your m
 - A modern browser. Chromium/Edge are tested; Firefox should work, Safari is untested.
 
 ## Run
+
+### Portable Windows build
+
+Download `Riggle-*-win64.zip` from [Releases](https://github.com/SenjuWoo/riggle/releases),
+unzip it and double-click **`START.bat`**. Python 3.11.9 is bundled; Blender 4.5+
+is still required.
+
+### From source
 
 Windows: double-click **`START.bat`**.
 

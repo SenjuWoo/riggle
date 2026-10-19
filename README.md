@@ -2,6 +2,10 @@
 
 **Rig it, jiggle it, ship it.**
 
+[![tests](https://github.com/SenjuWoo/riggle/actions/workflows/tests.yml/badge.svg)](https://github.com/SenjuWoo/riggle/actions/workflows/tests.yml)
+[![license: MIT](https://img.shields.io/badge/license-MIT-c8ff4d.svg)](LICENSE)
+[![python 3.10+](https://img.shields.io/badge/python-3.10%2B-6ee7ff.svg)](pyproject.toml)
+
 Riggle is a local, open-source character workbench for the part of Character Creator
 you actually use: drop in a mesh, fit a skeleton, mark the bits that should wobble,
 unwrap and paint one texture atlas, then export a rigged **GLB + FBX** with a spring
@@ -192,3 +196,6 @@ Blender. Set `RIGGLE_BLENDER` to test a specific executable.
 ## License
 
 MIT © 2026 SenjuWoo. Three.js is MIT; see [THIRD_PARTY.md](THIRD_PARTY.md).
+
+Riggle is an independent project, not affiliated with or endorsed by Reallusion.
+Character Creator is a trademark of Reallusion Inc.

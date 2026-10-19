@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.1.1 — 2026-10-19
+
+Packaging release; no app behavior changes.
+
+- Portable Windows build (`Riggle-0.1.1-win64.zip`) with a bundled Python 3.11.9
+  embeddable runtime, so Python does not need to be installed.
+- `START.bat` prefers the bundled runtime and falls back to `py -3` / `python`.
+- Added `packaging/build_portable.py` and SHA-256 checksums for release assets.
+- Blender 4.5+ is still required for import, rigging, UV and export.
+
 ## 0.1.0 — 2026-10-19
 
 First working release.

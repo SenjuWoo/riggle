@@ -4,7 +4,7 @@
 import a model, fit a skeleton, author jiggle bones, unwrap + paint a texture
 atlas, export a fully rigged GLB/FBX into a folder you choose.
 
-**Version:** 0.1.0
+**Version:** 0.1.1
 **Repo:** <https://github.com/SenjuWoo/riggle> — public, **heavy WIP**
 **Protection:** `main` requires the `tests` workflow on Windows + Ubuntu, a pull
 request, and linear history; force pushes and deletions are blocked.
@@ -67,6 +67,6 @@ Windows: double-click `START.bat`.
 
 ## Last good version
 
-`0.1.0` — tag `v0.1.0` (pre-release), built from protected `main`. Demo project:
-**Riggle Demo** (`~/RiggleProjects/fixture-9a6287`) with 24 joints, 2 jiggle bones
-and a painted atlas.
+`0.1.1` — tag `v0.1.1` (release with portable Windows build), built from protected
+`main`. Demo project: **Riggle Demo** (`~/RiggleProjects/fixture-9a6287`) with 24
+joints, 2 jiggle bones and a painted atlas.

@@ -28,7 +28,7 @@ Engines that ignore extras still get a fully skinned, textured model.
 ```json
 {
   "app": "Riggle",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "manifest_version": 1,
   "name": "My Hero",
   "created": "2026-10-19T15:24:53",

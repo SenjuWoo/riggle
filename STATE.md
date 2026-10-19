@@ -6,6 +6,8 @@ atlas, export a fully rigged GLB/FBX into a folder you choose.
 
 **Version:** 0.1.0
 **Repo:** <https://github.com/SenjuWoo/riggle> — public, **heavy WIP**
+**Protection:** `main` requires the `tests` workflow on Windows + Ubuntu, a pull
+request, and linear history; force pushes and deletions are blocked.
 **Status:** feature-complete for the five-step workflow; verified end-to-end with
 real Blender 5.2 and a real HTTP client. Interfaces and project format may change.
 
@@ -65,6 +67,6 @@ Windows: double-click `START.bat`.
 
 ## Last good version
 
-`0.1.0` — commit `ca0e151`, tag `v0.1.0`. Demo project: **Riggle Demo**
-(`~/RiggleProjects/fixture-9a6287`) with 24 joints, 2 jiggle bones and a painted
-atlas.
+`0.1.0` — tag `v0.1.0` (pre-release), built from protected `main`. Demo project:
+**Riggle Demo** (`~/RiggleProjects/fixture-9a6287`) with 24 joints, 2 jiggle bones
+and a painted atlas.

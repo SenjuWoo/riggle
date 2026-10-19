@@ -5,8 +5,9 @@ import a model, fit a skeleton, author jiggle bones, unwrap + paint a texture
 atlas, export a fully rigged GLB/FBX into a folder you choose.
 
 **Version:** 0.1.0
+**Repo:** <https://github.com/SenjuWoo/riggle> — public, **heavy WIP**
 **Status:** feature-complete for the five-step workflow; verified end-to-end with
-real Blender 5.2 and a real HTTP client.
+real Blender 5.2 and a real HTTP client. Interfaces and project format may change.
 
 ## Done
 

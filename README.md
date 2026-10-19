@@ -2,6 +2,10 @@
 
 **Rig it, jiggle it, ship it.**
 
+> **Heavy WIP — 0.1.0.** The five-step flow works end to end, but the UI, project
+> format and export manifest can still change without notice. Back up projects and
+> don't put it in a production pipeline yet.
+
 [![tests](https://github.com/SenjuWoo/riggle/actions/workflows/tests.yml/badge.svg)](https://github.com/SenjuWoo/riggle/actions/workflows/tests.yml)
 [![license: MIT](https://img.shields.io/badge/license-MIT-c8ff4d.svg)](LICENSE)
 [![python 3.10+](https://img.shields.io/badge/python-3.10%2B-6ee7ff.svg)](pyproject.toml)

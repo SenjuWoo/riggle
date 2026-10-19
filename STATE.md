@@ -64,4 +64,6 @@ Windows: double-click `START.bat`.
 
 ## Last good version
 
-`0.1.0` — tag/commit after the verification run above.
+`0.1.0` — commit `ca0e151`, tag `v0.1.0`. Demo project: **Riggle Demo**
+(`~/RiggleProjects/fixture-9a6287`) with 24 joints, 2 jiggle bones and a painted
+atlas.

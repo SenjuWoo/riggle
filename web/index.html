@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Riggle — rig it, jiggle it, ship it</title>
+<link rel="stylesheet" href="/static/style.css">
+<script type="importmap">
+{
+  "imports": {
+    "three": "/static/vendor/three.module.js",
+    "three/addons/": "/static/vendor/addons/"
+  }
+}
+</script>
+<script>window.RIGGLE = { token: "__RIGGLE_TOKEN__", version: "__RIGGLE_VERSION__" };</script>
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="brand">
+      <span class="logo">R</span>
+      <span class="word">RIGGLE</span>
+      <span class="ver">v__RIGGLE_VERSION__</span>
+    </div>
+    <div class="project-title" id="projectTitle">no project</div>
+    <nav class="steps" id="steps">
+      <button data-mode="import"><b>1</b> Import</button>
+      <button data-mode="rig"><b>2</b> Rig</button>
+      <button data-mode="jiggle"><b>3</b> Jiggle</button>
+      <button data-mode="paint"><b>4</b> Paint</button>
+      <button data-mode="export"><b>5</b> Export</button>
+    </nav>
+    <div class="header-actions">
+      <span class="blender-dot" id="blenderDot" title="Blender status"></span>
+      <button class="ghost" id="btnSettings" title="Settings">Settings</button>
+    </div>
+  </header>
+
+  <main>
+    <aside id="panel"></aside>
+    <section id="stage">
+      <canvas id="view"></canvas>
+      <div id="hud">
+        <div class="hud-left">
+          <span id="modeTitle">Import</span>
+          <span id="modeHint" class="muted"></span>
+        </div>
+        <div class="hud-right">
+          <button class="chip" id="btnFrame" title="Frame the model">Frame</button>
+          <button class="chip" id="btnWire" title="Toggle wireframe">Wire</button>
+          <button class="chip" id="btnGrid" title="Toggle grid">Grid</button>
+        </div>
+      </div>
+      <div id="paintOverlay" class="hidden"></div>
+      <div id="dropzone" class="dropzone hidden">
+        <div class="dropzone-card">
+          <div class="drop-icon">↥</div>
+          <b>Drop your model</b>
+          <span>FBX · GLB · glTF · OBJ · STL · PLY · Blend · USD</span>
+        </div>
+      </div>
+      <div id="busy" class="busy hidden">
+        <div class="busy-card">
+          <div class="spinner"></div>
+          <b id="busyTitle">Working</b>
+          <span id="busyMsg" class="muted">starting Blender…</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span id="statusMsg">Ready</span>
+    <div class="progress"><i id="progressBar"></i></div>
+    <span id="statusPct" class="mono"></span>
+    <button class="ghost" id="btnLog">Log</button>
+  </footer>
+
+  <div id="logPanel" class="log-panel hidden">
+    <div class="log-head"><b>Job log</b><button class="ghost" id="btnLogClose">close</button></div>
+    <pre id="logBody"></pre>
+  </div>
+  <div id="toast" class="toast"></div>
+</div>
+<script type="module" src="/static/js/app.js"></script>
+</body>
+</html>

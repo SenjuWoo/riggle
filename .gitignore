@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+dist/
+build/
+*.egg-info/
+# User projects and exports never belong in the repo
+RiggleProjects/
+RiggleExports/
+tests/fixtures/*.blend
+tests/fixtures/*.fbx

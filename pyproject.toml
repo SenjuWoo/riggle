@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "riggle"
+version = "0.1.0"
+description = "Local character rigging, jiggle-bone authoring and UV painting workbench"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "SenjuWoo" }]
+dependencies = []
+
+[tool.setuptools]
+packages = ["riggle"]
+include-package-data = false

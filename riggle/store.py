@@ -130,7 +130,9 @@ class ProjectError(RuntimeError):
 
 class Project:
     def __init__(self, path: Path):
-        self.path = path
+        # Canonicalise once: Windows short names (RUNNER~1) and symlinks otherwise
+        # break the containment check in file().
+        self.path = Path(path).resolve()
         self.data: dict = {}
 
     # -- lifecycle ---------------------------------------------------------

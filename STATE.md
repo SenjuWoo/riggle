@@ -25,7 +25,7 @@ real Blender 5.2 and a real HTTP client. Interfaces and project format may chang
 - Export: GLB (skin + texture + extras), FBX (embedded textures), atlas PNG,
   `riggle.json`, `README.txt`; manifest on the armature node.
 - Local server: `127.0.0.1`, startup token, path containment, 4 GB upload cap.
-- Tests: 19 unit/API tests with a fake Blender runner; real Blender smoke test.
+- Tests: 23 unit/API tests with a fake Blender runner; real Blender smoke test.
 
 ## Verified
 
@@ -37,6 +37,9 @@ real Blender 5.2 and a real HTTP client. Interfaces and project format may chang
   unwrap → paint stroke → save → export — pass; no console exceptions.
 - Live paint preview: filling the atlas pink changed 32,965 model pixels.
 - Live spring preview: shaking changed both jiggle-bone quaternions.
+- Release `v0.1.1`: portable Windows zip, source zip and SHA-256 checksums
+  published; both archives match the tag's files (line endings aside) and the
+  portable build starts, serves the UI and imports a model through Blender.
 
 ## Run
 

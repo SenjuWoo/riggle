@@ -1,4 +1,19 @@
+<p align="center">
+  <img src="web/icon.svg" width="72" height="72" alt="Riggle">
+</p>
+
+<div align="center">
+
 # Riggle
+
+<p>
+  <a href="https://github.com/SenjuWoo/riggle/actions/workflows/tests.yml"><img src="https://github.com/SenjuWoo/riggle/actions/workflows/tests.yml/badge.svg" alt="tests"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-c8ff4d.svg" alt="license: MIT"></a>
+  <a href="pyproject.toml"><img src="https://img.shields.io/badge/python-3.10%2B-6ee7ff.svg" alt="python 3.10+"></a>
+  <a href="https://github.com/SenjuWoo/riggle/releases/latest"><img src="https://img.shields.io/github/v/release/SenjuWoo/riggle?label=release&color=C8FF4D&labelColor=0d1117" alt="latest release"></a>
+</p>
+
+</div>
 
 **Rig it, jiggle it, ship it.**
 
@@ -6,9 +21,6 @@
 > format and export manifest can still change without notice. Back up projects and
 > don't put it in a production pipeline yet.
 
-[![tests](https://github.com/SenjuWoo/riggle/actions/workflows/tests.yml/badge.svg)](https://github.com/SenjuWoo/riggle/actions/workflows/tests.yml)
-[![license: MIT](https://img.shields.io/badge/license-MIT-c8ff4d.svg)](LICENSE)
-[![python 3.10+](https://img.shields.io/badge/python-3.10%2B-6ee7ff.svg)](pyproject.toml)
 
 Riggle is a local, open-source character workbench for the part of Character Creator
 you actually use: drop in a mesh, fit a skeleton, mark the bits that should wobble,
